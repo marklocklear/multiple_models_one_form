@@ -1,1 +1,6 @@
 Simple app that demonstrates creation of mutiple models in a single form.
+
+>run 'bundle install'
+>run 'rake db:migrate'
+
+One model is created called 'questions'. Go to questions/new and you can enter 3 questions and submit one a single form.

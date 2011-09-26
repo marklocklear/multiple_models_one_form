@@ -1,0 +1,7 @@
+<%= form_tag :action => 'create' %>
+<% @questions.each_with_index do |question, index| %>
+  <%= fields_for "questions[#{index}]", question do |f| %>
+    Question: <%= f.text_field :name %><br/>
+  <% end %>
+<% end %>
+<%= submit_tag %>
